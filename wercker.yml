@@ -17,4 +17,4 @@ deploy:
         code: |
           set -ex
           npm install -g netlify-cli
-          netlify deploy --site=f1e6e53d-ace7-488d-866d-e84cd0136eb0 --dir=frames-web/build --prod
+          netlify deploy --site=73889077-d901-41d4-a19b-06bfb56ea5ea --dir=frames-web/build --prod
