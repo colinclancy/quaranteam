@@ -1,5 +1,5 @@
-# Quaranteam
-Frame composer for Quaranteam.
+# Team Humanity
+Frame composer for teamhumanity_.
 
 ## How to Update the Frames
 
