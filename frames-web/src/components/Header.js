@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Image, Link } from 'theme-ui'
-import quaranteamUri from '../assets/quaranteam.png'
+import teamhumanityUri from '../assets/teamhumanity.png'
 
 export default function Header() {
   return (
@@ -12,9 +12,9 @@ export default function Header() {
             flexFlow:   'row wrap'
           }}>
         <div>
-          <a href='https://quaranteamnow.com'>
+          <a href='https://teamhumanity.com'>
             <Image
-                src={quaranteamUri}
+                src={teamhumanityUri}
                 sx={{
                   width: [ '100%', '100%', 500 ]
                 }}/>
@@ -28,10 +28,10 @@ export default function Header() {
               flexFlow:   'row nowrap',
               whiteSpace: 'nowrap'
             }}>
-          <Link variant='menu' style={{ display: 'block' }} href='https://quaranteamnow.com'>Home</Link>
-          <a style={{ display: 'block' }} href='https://www.facebook.com/quaranteamnow' rel='noopener noreferrer' target='_blank'><Facebook/></a>
-          <a style={{ display: 'block' }} href='https://twitter.com/quaranteamnow' rel='noopener noreferrer' target='_blank'><Twitter/></a>
-          <a style={{ display: 'block' }} href='https://www.instagram.com/quaranteamnow/' rel='noopener noreferrer' target='_blank'><Instagram/></a>
+          <Link variant='menu' style={{ display: 'block' }} href='https://teamnhumanity.com'>Home</Link>
+          <a style={{ display: 'block' }} href='https://www.facebook.com/weareteamhumanity' rel='noopener noreferrer' target='_blank'><Facebook/></a>
+          <a style={{ display: 'block' }} href='https://twitter.com/teamhumanity_' rel='noopener noreferrer' target='_blank'><Twitter/></a>
+          <a style={{ display: 'block' }} href='https://www.instagram.com/weareteamhumanity/' rel='noopener noreferrer' target='_blank'><Instagram/></a>
         </Box>
       </Box>
   )

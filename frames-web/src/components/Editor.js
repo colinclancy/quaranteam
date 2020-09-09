@@ -40,6 +40,21 @@ export default function Editor() {
   const handleDownloadClick = async () => {
     if (frameRef.current) {
       const canvas = await html2canvas(frameRef.current, { scrollX: 0, scrollY: 0 })
+
+      // convert to grayscale
+      const ctx = canvas.getContext('2d')
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height)
+      const data = imageData.data
+      for(let i = 0; i < data.length; i += 4) {
+        const brightness = 0.34 * data[i] + 0.5 * data[i + 1] + 0.16 * data[i + 2];
+        data[i] = brightness;
+        data[i + 1] = brightness;
+        data[i + 2] = brightness;
+      }
+      ctx.putImageData(imageData, 0, 0)
+      // end convert to grayscale
+
+
       const image = canvas.toDataURL('image/png')
       const link = document.createElement('a')
 

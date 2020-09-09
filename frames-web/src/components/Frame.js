@@ -26,7 +26,8 @@ export default React.forwardRef(({ dimmed, frameSpec, onClick, profileSpec, sele
               top:       '50%',
               width:     isPortrait ? 'auto' : '100%',
               transform: `translate(-50%, -50%) scale(${zoom / 100})`,
-              zIndex:    -1
+              zIndex:    -1,
+              filter: 'grayscale(100%)'
             }}/>
         {selected && <Tick/>}
         <Image
@@ -35,7 +36,8 @@ export default React.forwardRef(({ dimmed, frameSpec, onClick, profileSpec, sele
             sx={{
               cursor:  onClick ? 'pointer' : 'inherit',
               display: 'block',
-              zIndex:  1
+              zIndex:  1,
+              filter: 'grayscale(100%)'
             }}/>
       </Box>
   )
